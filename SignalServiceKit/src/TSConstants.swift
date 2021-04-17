@@ -158,8 +158,8 @@ private class TSConstantsProduction: TSConstantsProtocol {
     public let textSecureServerURL = "https://54.213.247.43/"
     public let textSecureCDN0ServerURL = "https://d13div0765suhn.cloudfront.net"
     public let textSecureCDN2ServerURL = "https://d13div0765suhn.cloudfront.net"
-    public let contactDiscoveryURL = "https://54.213.247.43"
-    public let keyBackupURL = "https://54.213.247.43"
+    public let contactDiscoveryURL = "http://54.213.247.43"
+    public let keyBackupURL = "http://54.213.247.43"
     public let storageServiceURL = "https://d13div0765suhn.cloudfront.net"
     public let sfuURL = "https://sfu.voip.signal.org"
     public let kUDTrustRoot = "BbbhMIlEDWAhg8SejhMOaXkFuJqOgixkWdedIKIe19YM"
@@ -201,26 +201,26 @@ private class TSConstantsProduction: TSConstantsProtocol {
 
 private class TSConstantsStaging: TSConstantsProtocol {
 
-    public let textSecureWebSocketAPI = "wss://textsecure-service-staging.whispersystems.org/v1/websocket/"
-    public let textSecureServerURL = "https://textsecure-service-staging.whispersystems.org/"
-    public let textSecureCDN0ServerURL = "https://cdn-staging.signal.org"
-    public let textSecureCDN2ServerURL = "https://cdn2-staging.signal.org"
-    public let contactDiscoveryURL = "https://api-staging.directory.signal.org"
-    public let keyBackupURL = "https://api-staging.backup.signal.org"
-    public let storageServiceURL = "https://storage-staging.signal.org"
+
+    public let textSecureWebSocketAPI = "wss://54.213.247.43/v1/websocket/"
+    public let textSecureServerURL = "https://54.213.247.43/"
+    public let textSecureCDN0ServerURL = "https://d13div0765suhn.cloudfront.net"
+    public let textSecureCDN2ServerURL = "https://d13div0765suhn.cloudfront.net"
+    public let contactDiscoveryURL = "http://54.213.247.43"
+    public let keyBackupURL = "http://54.213.247.43"
+    public let storageServiceURL = "https://d13div0765suhn.cloudfront.net"
     public let sfuURL = "https://sfu.voip.signal.org"
-    public let kUDTrustRoot = "BbqY1DzohE4NUZoVF+L18oUPrK3kILllLEJh2UnPSsEx"
+    public let kUDTrustRoot = "BbbhMIlEDWAhg8SejhMOaXkFuJqOgixkWdedIKIe19YM"
 
     public let censorshipReflectorHost = "europe-west1-signal-cdn-reflector.cloudfunctions.net"
 
-    public let serviceCensorshipPrefix = "service-staging"
-    public let cdn0CensorshipPrefix = "cdn-staging"
-    public let cdn2CensorshipPrefix = "cdn2-staging"
-    public let contactDiscoveryCensorshipPrefix = "directory-staging"
-    public let keyBackupCensorshipPrefix = "backup-staging"
-    public let storageServiceCensorshipPrefix = "storage-staging"
+    public let serviceCensorshipPrefix = "service"
+    public let cdn0CensorshipPrefix = "cdn"
+    public let cdn2CensorshipPrefix = "cdn2"
+    public let contactDiscoveryCensorshipPrefix = "directory"
+    public let keyBackupCensorshipPrefix = "backup"
+    public let storageServiceCensorshipPrefix = "storage"
 
-    // CDS uses the same EnclaveName and MrEnclave
     public let contactDiscoveryEnclaveName = "c98e00a4e3ff977a56afefe7362a27e4961e4f19e211febfbb19b897e6b80b15"
     public var contactDiscoveryMrEnclave: String {
         return contactDiscoveryEnclaveName
